@@ -1,0 +1,420 @@
+
+/*Header*/
+	header {
+	  background: #fff;
+
+	}
+/*End Header*/
+
+/*Master Body*/
+	.product {
+		margin:auto;
+		display:block;
+	}
+	/*Body*/
+	.container{
+		font-family: "Noto Sans ";
+	}
+/*End Master Body*/
+
+
+/*Making site Resposive*/ /*Not Working Yet*/
+	/*Phone*/
+		@media screen and (max-width: 599px){
+			.box {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 5rem;
+			padding: 1em;
+			margin:0;
+			}
+		}
+
+	/*Tablet*/
+		@media (min-width: 600px){
+			.box {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 5rem;
+			padding: 1em;
+			margin:0;
+			}
+		}
+	/*Tablet Landscape*/
+		@media (min-width: 900px){
+			.box {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 5rem;
+			padding: 1em;
+			margin:0;
+			}
+		}
+	/*Desktop*/
+		@media (min-width: 1200px) {
+			.box {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-gap: 5rem;
+			padding: 1em;
+			margin:0;
+			}
+		}
+	/*Big Desktop*/
+		@media (min-width: 1800px){
+			.box {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-gap: 5px;
+			padding: 5px;
+			margin:0;
+			}
+		}
+/*End Site Responsiveness*/
+
+/*Card Section*/
+		/*Outline*/
+		.smallbox {
+		text-align: center;
+		padding-bottom: 2%;
+		border-top-left-radius: 8px;
+	    border-top-right-radius: 8px;
+		}
+		/*End Outline*/
+
+		/*Cards Layout*/
+			.box {
+				display: grid;
+			    grid-template-columns: 1fr 1fr 1fr;
+			    grid-gap: 2%;
+			    padding: 2%;
+				margin:0 auto;	
+			}
+			.category{
+				text-align: center;
+			}
+		/*End Cards Layout*/
+
+	/*Card Layout*/
+		img{
+			width:100%;
+/*			border-top-left-radius: 8px;
+		    border-top-right-radius: 8px;*/
+
+		}
+		.tittle{
+			text-align: left;
+			padding-left: 20px;
+		}
+
+		button{
+			width: 70%;
+		    background: black;
+		    color: white;
+		    padding: 10px;
+		    border-radius: 8px;
+		}
+
+		button:hover{
+			background-color: grey;
+		}
+
+
+/*End Card Layout*/
+
+.containerImage{
+	width: 4em;
+/*	background:red;*/
+}
+
+/*End Card Section*/
+
+/*Ordering*/
+	.orderingImg{
+		width: 40%;
+		outline-color: red;
+	}
+/*End Ordering*/
+
+
+.cont{
+	display:grid;
+	grid-template-columns: 23% 23% 23% 23%;
+	width:100%;
+	grid-gap: 2%;
+	padding-left: 1.5%;
+
+
+	
+}
+.cont > div {
+	height: 3rem;
+	text-align: center;
+}
+
+.father {
+	margin: 0 auto;
+	width: 60%;
+	padding:2rem;
+}
+
+.orderBox{
+	margin: 0 auto;
+	width: 60%;
+	padding:2rem;
+	border:1px solid black;
+}
+
+.drop{
+	float:right;
+
+}
+
+.drop > option {
+	padding: 1rem;
+}
+
+.orderButton{
+
+}
+
+.bottomSectionTop{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 5fr 2fr;
+		text-align:  center;
+		padding-left: 10px;
+}
+
+.bottomSectionTop > div{
+
+		text-align:  center;
+}
+
+.containerLoad{
+	float:right;
+/*	background:red;*/
+}
+
+.bottomSectionMiddle{
+		display: grid;
+		grid-template-columns: 1fr 1fr 3fr 2fr 2fr;
+		align-items: center;
+}
+
+.bottomSectionMiddle > div{
+
+		align-items: center;
+		text-align: center;
+}
+
+.bottomSectionBottom{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr ;
+		align-items: center;
+
+	}
+
+.bottomSectionBottom > div{
+
+		text-align:  center ;
+
+}
+
+.fillButton{
+			width: 70%;
+		    background: none;
+		    color: blue;
+		    padding: 10px;
+		    border-radius: 8px;
+/*		    background:red;*/
+		}
+
+.cancelButton{
+			width: 70%;
+		    background: none;
+		    color: blue;
+		    padding: 10px;
+		    border-radius: 8px;
+		    outline: none;
+		    border:none;
+		}
+
+.tittle > div{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-width: 1px;
+
+}
+
+/*Steps*/
+	.centeredBody{
+		margin:0 auto;
+
+	}
+/*End Steps*/
+
+/*Confirming*/
+/*	.confirmingHeader{
+		padding:2%;
+		border:1px solid black;
+	}*/
+
+
+	.confirmingDetailRow{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		align-items: center;
+		text-align: center;
+		padding-left: 1%;
+		padding:3%;
+	}
+
+
+	.confirmingDetailRow > div{
+
+	}
+
+
+	.confirmingDetailHeader{
+		display: grid;
+		grid-template-columns: 3fr 1fr 2fr 1fr ;
+		align-items: center;
+	}
+
+
+	.confirmingDetailHeader > div {
+
+	}
+
+	.confirmingTotal{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		align-items: center;
+
+	}
+
+		.confirmingTotal > div{
+
+		
+	}
+/*End Confirming*/
+
+/*Need to Organize */
+input{
+	width:100% !important;
+}
+
+.tableWidth{
+	width:60% !important;
+}
+
+.step{
+	margin: 0 auto;
+	width: 60%;
+	height: 100px;
+	padding:2rem;
+}
+
+.SecondaryButtonWidth{
+	width:350px;
+}
+
+.BlueHeader{
+	color:blue;
+	font-weight: bold;
+	color: #3c84c4 !important;
+/*	font-family: 'Lato';*/
+
+}
+
+
+th{
+	background-color: white !important;
+}
+
+td{
+	text-align: center !important;
+	border-top: 0px !important;
+}
+
+.Underline{
+/*	border-bottom: 1px !important;*/
+}
+
+tbody {
+    border-color: white !important;
+}
+
+.NoOutlineTable{
+
+}
+
+.ButtonsModalFix{
+	   display: grid;
+       grid-template-columns: 1fr 1fr;
+       align-items: center;
+}
+
+.inputWidth{
+	width: 100%;
+}
+
+.BoxLeft{
+	margin-left: -200px;
+	width:'45%';
+}
+
+.BoxRight{
+	margin-right: 200px;
+	width:'45%';
+}
+
+h4{
+	padding:4%;
+}
+
+.StepTop{
+
+		display: grid;
+		grid-template-columns: 1fr 1fr  ;
+		align-items: center;
+		padding-left: 4%
+	}
+
+}
+
+table{
+	margin: 0;
+}
+
+.ButtonsSidebyside{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		text-align: center;
+		padding-left: 1%;
+		padding:3%;
+		width: 30% !important;
+
+}
+
+
+#LeftButton{
+	width:40% !important;
+}
+
+#RightButton{
+	width:40% !important;
+}
+
+
+
+.Nounderline{
+/*	text-decoration : none; color : #000 !important;
+	border-bottom: 0px !important;
+	border-top: 0px !important;
+	border:none !important;
+
+}
+
+.ButtonsSidebyside

@@ -1,0 +1,19 @@
+{
+  "name": "select_app",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "lodash": "^4.17.4",
+    "meteor-node-stubs": "^0.3.2",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.2.0",
+    "react-fontawesome": "^1.6.1",
+    "react-router-dom": "^4.2.2",
+    "semantic-ui-calendar": "0.0.8",
+    "semantic-ui-react": "^0.77.1"
+  }
+}
