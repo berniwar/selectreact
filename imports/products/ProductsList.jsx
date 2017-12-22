@@ -14,20 +14,33 @@ export default class ProductsList extends React.Component{
 											</div>
 											<div className='box'>{this.props.products[item].map((ele, i)=>{
 												return <div className='smallbox' key={i}>
-															<PlywoodProductsItem name = {ele.name}/>
+															<PlywoodProductsItem 
+																name = {ele.name}
+																description= {ele.description}
+																priceperunit = {ele.priceperunit}
+																veneerQuality = {ele.veneerQuality}
+																history={this.props.history}
+																id={ele._id}
+
+															/>
 														</div>
+														debugger
 										})} </div></div>
 
-						}
-
-						else if(item == item){
+						}else if(item == item){
 									return <div className='container' key={i}> 
 										   <div className='category'>
 												<h1>{item}</h1>
 											</div>
 											<div className='box'>{this.props.products[item].map((ele, i)=>{
 												return <div className='smallbox' key={i}>
-															<ProductsItem name = {ele.name}/>
+															<ProductsItem 
+																name = {ele.name}
+																description= {ele.description}
+																priceperunit = {ele.priceperunit}
+																history={this.props.history}
+																id={ele._id}
+																/>
 														</div>
 										})} </div></div>
 								}

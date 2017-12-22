@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Icon } from 'semantic-ui-react'
+import { Menu, Icon, Header } from 'semantic-ui-react'
 
 export default class MenuExampleStackable extends Component {
   state = {}
@@ -10,9 +10,9 @@ export default class MenuExampleStackable extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu stackable sticky >
+      <Menu stackable >
         <Menu.Item>
-          Select
+          <Header as='h2'>Select</Header>
         </Menu.Item>
 
         <Menu.Item
@@ -28,7 +28,7 @@ export default class MenuExampleStackable extends Component {
          <Menu.Item
           className='icon'
           icon='user' 
-          position='right'
+          position='right center'
           name='testimonials'
           active={activeItem === 'testimonials'}
           onClick={this.handleItemClick}>

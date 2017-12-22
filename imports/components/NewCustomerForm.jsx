@@ -27,12 +27,12 @@ export default class NewCustomerForm extends React.Component{
 
 				<h3>New Customer Form</h3>
 
-	    			Name <Input fluid placeholder='Add Name' name="name"/>
-	    			Number <Input fluid placeholder='Add Number' name= "number"/>
-	    			Email <Input fluid  placeholder='Add Email' name= "email"/>
-	    			Company <Input fluid  placeholder='Add Company' name= "company"/>
-	    			Address <Input fluid  placeholder='Add Address' name= "address"/>
-	    			Role <Input fluid  placeholder='Add Role' name= "role"/>
+	    			Name 	<Input fluid placeholder='Add Name' name="name"/>
+	    			Number 	<Input fluid placeholder='Add Number' name= "number"/>
+	    			Email 	<Input fluid placeholder='Add Email' name= "email"/>
+	    			Company <Input fluid placeholder='Add Company' name= "company"/>
+	    			Address <Input fluid placeholder='Add Address' name= "address"/>
+	    			Role 	<Input fluid placeholder='Add Role' name= "role"/>
 
 	    		<h4></h4>
 	    		<p/>
