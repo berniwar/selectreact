@@ -108,9 +108,7 @@ componentWillMount(){
 var that = this
 	Tracker.autorun(()=>{
 		var products = Products.find({}).fetch()
-		debugger
 		that.setState({products},()=>{
-			debugger
 			console.log(this.state.products)
 		})
 

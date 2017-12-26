@@ -2,20 +2,13 @@ import React from 'react'
 import { Card, Icon, Image } from 'semantic-ui-react'
 import SecondaryButton from '../components/SecondaryButton'
 import NewProductForm from '../components/NewProductForm'
+import {Qualities} 		from '../api/Qualities.js'
 
 export default class ProductsItem extends React.Component{
 
-
-	redirect(){
-		debugger
-		this.props.history.push({
-				pathname:'/admin/product', 
-				state:{id:this.props.id}
-		})
-	}
 	render(){
 		return(
-			<div onClick={this.redirect.bind(this)}>
+			<div>
 				<Card>
 
 				<Image src="https://static.pexels.com/photos/20787/pexels-photo.jpg"/>
